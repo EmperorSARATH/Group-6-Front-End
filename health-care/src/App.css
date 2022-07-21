@@ -1,0 +1,155 @@
+
+.App {
+  text-align: center;
+  height: 85px;
+  /*background-color: rgb(219, 180, 23);
+  padding-top: 0px;*/
+}
+
+.navbar li{
+  display: inline-block;
+}
+.d-none{
+  display: none;
+}
+
+/* .welcome-nav{
+  background-color: aliceblue;
+  padding-top: 60px;
+} */
+ body{
+ background-image:url(./component/images/h3.jpg);
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position: 0px 50px;
+  }
+.heading1{
+  background-color: rgba(255, 255, 255);
+  height: 100%;
+  
+}
+.texth1{
+  padding-top: 100px;
+  
+}
+.name1{
+  color: rgba(28, 157, 129);
+  text-align: left;
+  font-size: 45px;
+  font-family:fantasy;
+  font-style: italic;
+  
+}
+.details1{
+  text-align: right;
+  padding-right: 0%;
+  font-size: 17px;
+}
+h2{
+  
+  text-align: left;
+  padding-left: 200px;
+  font-style: italic;
+  font-size: 30px;
+  
+}
+
+.p1
+{
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 17px;
+}
+.abt1
+{
+  background-color: rgb(255, 255, 255,0.5)
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(28, 157, 129, 0.6);
+  
+}
+.dashboard-ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(28, 157, 129, 0.6);
+}
+.box1{
+  margin-left: 160px;
+  margin-right: 160px;
+  background-color: rgba(28, 157, 129);
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 20px;
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px 30px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(18, 19, 19, 0.5);
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+
+.nav-bar-options{
+
+  padding-right: 10px;
+  color:rgb(32, 29, 29);
+  margin-left: 20px;
+  
+}
+
+.nav nav-pills nav-options{
+  color: black;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
