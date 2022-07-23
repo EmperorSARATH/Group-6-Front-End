@@ -16,7 +16,7 @@ const Dashboard = () => {
         <ul className="dashboard-ul" >
                 
           
-            <li><span><i></i></span><span><Link to="/user/view_profile" style={{ textDecoration: 'none' ,color:'black' }} >View profile</Link></span></li>
+            
             <li><span><i className="fa fa-book"></i></span><span><Link to='/user/appointment' style={{ textDecoration: 'none' ,color:'black' }} >Appointment</Link></span></li>
            
             <li><span><i className="fa fa-gear"></i></span><span><Link to="/login" style={{ textDecoration: 'none' ,color:'black' }}>Logout</Link></span></li>

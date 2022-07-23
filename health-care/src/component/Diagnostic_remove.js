@@ -39,7 +39,7 @@ export default class Diagnostic_remove extends React.Component{
             alert("succussfully removed")
 
         })
-        .catch((er)=>console.log(er))
+        .catch((er)=>alert("nu such exists"))
     }
 
     render(){

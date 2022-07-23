@@ -39,9 +39,13 @@ export default class Signup extends React.Component{
         };
         console.log(user);
         axios.post(`http://localhost:8080/User/register`,user)
-            .catch((error) => console.log(error))
-           .then(alert("Successfully added"))
-            .catch((er)=>alert("user already exists"))
+        .then(response => {
+            alert("successful");
+            
+         }).catch(error => {
+        
+            alert("Username already exists");
+         })
 
     }
    
@@ -70,7 +74,7 @@ export default class Signup extends React.Component{
                 <div>
                     <div>
                         
-                    <Button type ="submit" variant="contained">Submit</Button>
+                    <Button type ="submit" variant="contained">Sign Up</Button>
                         
                     </div>
                 </div>

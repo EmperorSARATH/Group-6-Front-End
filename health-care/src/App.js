@@ -10,7 +10,6 @@ import Diagnostic_center from './component/Diagnostic_center';
 import pic from "./component/images/healthcare2.png";
 import Diagnostic_remove from './component/Diagnostic_remove';
 import Diagnostic_View_all from './component/Diagnostic-View_all';
-import Diagnostic_test from './component/Diagnostic_test';
 import Dtest_add  from './component/Dtest_add';
 import Diagnostic_test_add from './component/Diagnostic_test_add';
 import View_profile from './component/View_profile';
@@ -20,6 +19,9 @@ import Remove_appointment from './component/Remove_appointment';
 import SetStatus from './component/SetStatus';
 import View_status from './component/View_status';
 import View_all_appointments from './component/View_all_appointments';
+import Diagnostic_test from './component/Diagnostic_test';
+import View_test from './component/View_test';
+import Remove_test from './component/Remove_test';
 
 const Home = () =>{
   localStorage.clear();
@@ -105,17 +107,20 @@ class App extends Component {
                   <Route exact path="/admin/dignostic-add" element={<Diagnostic_add/>} />
                   <Route exact path="/admin/diagnostic-remove" element={<Diagnostic_remove/>} />
                   <Route exact path="/admin/dignostic-view-all" element={<Diagnostic_View_all/>} />
-                  <Route exact path="/admin/Diagnostic_test" element={<Diagnostic_test/>} />
+                  {/* <Route exact path="/admin/Diagnostic_test" element={<Diagnostic_test/>} /> */}
                   <Route exact path="/admin/dignostic-test-add" element={<Diagnostic_test_add/>} />
-                  <Route exact path="/user/view_profile" element={<View_profile/>} />
-                  <Route exact path="/admin/add/test" element={<Dtest_add/>} />               
+                  <Route exact path="/admin/view_user" element={<View_profile/>} />
+                  <Route exact path="/admin/add-test" element={<Dtest_add/>} />               
                   <Route exact path="/user/appointment" element={<Appointment/>} />
                   <Route exact path="/user/add-appointment" element={<Add_appointment/>} />
                   <Route exact path="/user/remove-appointment" element={<Remove_appointment/>} />
                   <Route exact path="/admin/set_status" element={<SetStatus/>} />
                   <Route exact path="/user/view-status" element={<View_status/>} />
                   <Route exact path="/admin/view_all_appointments" element={<View_all_appointments/>} />
-              
+                  <Route exact path="/admin/diagnostic-test" element={<Diagnostic_test/>} />
+                  <Route exact path="/admin/view-test" element={<View_test/>} />
+                  <Route exact path="/admin/remove-test" element={<Remove_test/>} />
+                  
 
                      
                     </Routes>

@@ -5,19 +5,19 @@
 
 .container-sidebar {
     height: 78.5vh;
-    background-color: rgb(212, 168, 168);
+    background-color: rgba(111, 137, 127, 0.352);
     position: relative
     
 }
 
 .container-sidebar-user {
     height: 78.5vh;
-    background-color: rgb(141, 186, 253);
+    background-color: rgba(60, 170, 161, 0.365);
     position: relative
     
 }
 .sidebar{
-    position:fixed;
+    position:relative;
     align-items: center;
 
 
@@ -29,7 +29,7 @@
 }
 
 .container-sidebar-user .sidebar{
-    position: fixed;
+    position: relative;
     background-color: rgb(29, 99, 95);
     height: 100vh;
     width: 90px;
@@ -43,10 +43,10 @@
 
 
 .container-sidebar .sidebar {
-    position: fixed;
-    background-color: rgb(203, 197, 236);
-    height: 100vh;
-    width: 130px;
+    position: relative;
+    background-color: rgba(28, 157, 129, 0.6);
+    height: 78.5vh;
+    width: 170px;
     z-index: 10;
     padding-left: 0.1px;
     padding-right: 30px;

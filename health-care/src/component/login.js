@@ -34,7 +34,7 @@ export default class Login extends React.Component{
     
         axios.post(`http://localhost:8080/User/login`,user)
             .then(response => {
-                alert("sussesful");
+                alert("successful");
                 localStorage.setItem("username",user.username);
            
                 return response.data

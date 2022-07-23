@@ -9,7 +9,6 @@ export default class Diagnostic_remove extends React.Component{
         
         this.state = {
             id:''
-        
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -20,33 +19,33 @@ export default class Diagnostic_remove extends React.Component{
     handleChange(event){
         this.setState({
             [event.target.name] : event.target.value,
-         
+            
         });
     }
     handleSubmit(event){
         event.preventDefault();
-        const Appointment = {
+        const test = {
             
-            id : this.state.id,
+            id : this.state.id
     
         };
        
        
-        console.log(Appointment);
-        axios.delete(`http://localhost:8080/appointment/remove/${localStorage.getItem("id")}`,Appointment)
+        console.log(test);
+        axios.delete(`http://localhost:8080/deleteDataById/${localStorage.getItem("id")}`,test)
         .then(res=>{
             console.log(res.data)
             alert("succussfully removed")
 
         })
-        .catch((er)=>alert("wrong credentials"))
+        .catch((er)=>alert("wrong details"))
     }
 
     render(){
         
         return(
             <div>
-                <h2>Remove Appointment</h2>
+                <h2>Remove Test</h2>
                 <div>
                 <form ref="form" onSubmit={this.handleSubmit}>
                 <div>
@@ -54,13 +53,12 @@ export default class Diagnostic_remove extends React.Component{
                         <label >ID</label>
                          <input type="number" name="id" onChange={this.handleChange} className="form-control" id="exampletitle" placeholder="id" value={this.state.id}  required />
                          {localStorage.setItem("id",this.state.id)}
-                      
                     </div>
                 </div>
                 <br/>
                 <div >
                     <div>
-                        <Button type ="submit" className="btn2" variant="contained">Remove Appointment</Button>
+                        <Button type ="submit" className="btn2" variant="contained">Remove Test</Button>
                     </div>
                 </div>
             </form>

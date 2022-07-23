@@ -88,16 +88,14 @@ export default class Add_appointment extends React.Component {
           <br/>
           gender
           <input defaultValue={gender} onChange={this.handleChange} name='gender' />
-
+          
 
           <div className="form-group">
                     <div className="col-sm-offset-2 col-sm-10">
-                         {/* <Button type="submit" className='btn' variant="contained" ><Link to="/admin/view-category" style={{ textDecoration: 'none' ,color:'orange' }} >View category</Link></Button>  */}
+                    <br/>
                         <Button type ="submit" className="btn2" variant="contained">Add Appointment</Button>
 
-                        {/* <Switch>
-                <Route exact path="/admin/view-category" component={View_category} />
-            </Switch> */}
+ 
                     </div>
                 </div>
 
